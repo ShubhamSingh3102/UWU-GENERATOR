@@ -11,7 +11,7 @@ import os
 GEMINI_API_KEY = "AIzaSyDOvM48IMxod_4SvEttajKXcVDblmKHyPk"  # Replace with your actual API key
 genai.configure(api_key=GEMINI_API_KEY)
 
-# --- DATABASE FOR USER AUTHENTICATION ---
+# --- DATABASE FOR USER AUTHENTICATION --
 def init_db():
     conn = sqlite3.connect("users.db")
     c = conn.cursor()
@@ -219,7 +219,7 @@ def main():
                     st.error("❌ Failed to capture image")
     
     # --- Code Generation ---
-    if st.button("✨ Generate Code!"):
+    if st.button(" Generate Code!"):
         if st.session_state.user_prompt:
             generated_code = generate_code_in_language(st.session_state.user_prompt, language_choice)
             st.code(generated_code, language=language_choice.lower(), line_numbers=True)
