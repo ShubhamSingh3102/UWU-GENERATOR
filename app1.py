@@ -7,7 +7,7 @@ import sqlite3  # User authentication & storage
 from uuid import uuid4  # Unique ID for versioning
 import os
 
-# --- API CONFIGURATION ---
+# API CONFIGURATION 
 GEMINI_API_KEY = "AIzaSyDOvM48IMxod_4SvEttajKXcVDblmKHyPk"  # Replace with your actual API key
 genai.configure(api_key=GEMINI_API_KEY)
 
