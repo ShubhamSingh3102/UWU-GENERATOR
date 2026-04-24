@@ -107,11 +107,11 @@ def login_page():
             # Update the session state to force a rerun
             st.session_state["page_loaded"] = True
         else:
-            st.error("❌ Invalid username or password")
+            st.error("Invalid username or password")
     
     if register:
         if register_user(username, password):
-            st.success("✅ Registered successfully! Please login.")
+            st.success("Registered successfully! Please login.")
         else:
             st.error("❌ Username already exists!")
 
